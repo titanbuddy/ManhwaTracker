@@ -19,8 +19,11 @@ THE SITE:
 
 
 THE EXTENSION:
+\n
+
 <img width="377" height="438" alt="1" src="https://github.com/user-attachments/assets/4bbc850b-a3bc-48b0-a7a0-f791014e1cb8" />
 
+\n
 
 
 <img width="379" height="408" alt="2" src="https://github.com/user-attachments/assets/f588ffb4-e97f-4dbd-a5a8-6ee8d7e89e2d" />
