@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Manhwa Tracker</title>
+<meta name="description" content="Never lose your place in a manhwa again. Automatic chapter tracking on any site, with optional sync and new-chapter alerts." />
+<link rel="icon" href="icon.png" />
+<style>
+  :root { --bg:#14131a; --card:#1e1d27; --text:#ecebf3; --muted:#a3a1b4; --accent:#7c5cff; --line:#2c2b38; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#faf9ff; --card:#fff; --text:#1a1a24; --muted:#5b5b6e; --accent:#6a48f0; --line:#e6e3f5; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  .wrap { max-width:980px; margin:0 auto; padding:0 20px; }
+  nav { display:flex; align-items:center; justify-content:space-between; padding:18px 0; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:700; }
+  .brand img { width:32px; height:32px; }
+  nav a { color:var(--muted); text-decoration:none; margin-left:18px; font-size:14px; }
+  .hero { text-align:center; padding:64px 0 40px; }
+  h1 { font-size:clamp(32px,6vw,54px); line-height:1.1; margin:0 0 16px; letter-spacing:-0.02em; }
+  .lead { color:var(--muted); font-size:19px; max-width:620px; margin:0 auto 28px; }
+  .btn { display:inline-block; padding:12px 22px; border-radius:10px; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; margin:4px; }
+  .btn.alt { background:transparent; border:1px solid var(--line); color:var(--text); }
+  .note { color:var(--muted); font-size:13px; margin-top:10px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; padding:40px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; }
+  .card h3 { margin:0 0 6px; font-size:17px; }
+  .card p { margin:0; color:var(--muted); font-size:15px; }
+  h2 { font-size:28px; text-align:center; margin:40px 0 8px; }
+  .steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; padding:16px 0 40px; counter-reset:s; }
+  .step { counter-increment:s; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; }
+  .step::before { content:counter(s); display:inline-grid; place-items:center; width:28px; height:28px; border-radius:50%; background:var(--accent); color:#fff; font-weight:700; margin-bottom:10px; }
+  .step p { margin:0; color:var(--muted); font-size:15px; }
+  footer { border-top:1px solid var(--line); padding:28px 0 48px; color:var(--muted); font-size:14px; text-align:center; }
+  footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="brand"><img src="icon.png" alt="" /> Manhwa Tracker</div>
+    <div><a href="#features">Features</a><a href="privacy.html">Privacy</a></div>
+  </nav>
+
+  <section class="hero">
+    <h1>Never forget which chapter you were on.</h1>
+    <p class="lead">Read on any manhwa, manga or webtoon site. Manhwa Tracker quietly remembers your spot, so months later you can jump straight back in.</p>
+    <a class="btn" href="#" id="chrome">Add to Chrome</a>
+    <a class="btn alt" href="#" id="firefox">Add to Firefox</a>
+    <p class="note">Free. No account needed. Your library stays on your device unless you turn on sync.</p>
+  </section>
+
+  <section id="features" class="grid">
+    <div class="card"><h3>Works on any site</h3><p>No list of supported sites. It finds the chapter in the page itself, so new sites work too.</p></div>
+    <div class="card"><h3>Fully automatic</h3><p>Stay on a chapter for a few seconds and it's saved. Nothing to click while you read.</p></div>
+    <div class="card"><h3>Continue in one click</h3><p>Your library shows every series with its last chapter. Hit Continue or jump to the next chapter.</p></div>
+    <div class="card"><h3>New-chapter alerts</h3><p>Optional notifications when a series you follow posts a new chapter.</p></div>
+    <div class="card"><h3>Sync across devices</h3><p>Sign in with a free account and your progress follows you from laptop to laptop.</p></div>
+    <div class="card"><h3>You're in control</h3><p>Block sites, track only the ones you allow, pause anytime, export your data any time.</p></div>
+  </section>
+
+  <h2>How it works</h2>
+  <section class="steps">
+    <div class="step"><p>Install the extension.</p></div>
+    <div class="step"><p>Read a chapter anywhere. Watch the chapter number appear on the icon.</p></div>
+    <div class="step"><p>Come back whenever. Open the popup and press Continue.</p></div>
+  </section>
+
+  <footer>
+    <p>Manhwa Tracker is an independent project and is not affiliated with any reading site.</p>
+    <p><a href="privacy.html">Privacy policy</a></p>
+  </footer>
+</div>
+<script>
+  // Replace these with your real store links once the extension is published.
+  document.getElementById('chrome').href = 'https://chromewebstore.google.com/';
+  document.getElementById('firefox').href = 'https://addons.mozilla.org/';
+</script>
+</body>
+</html>
