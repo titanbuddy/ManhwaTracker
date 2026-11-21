@@ -16,12 +16,12 @@
 <body>
 <main>
   <h1>Panelmark Privacy Policy</h1>
-  <p class="muted">Last updated: November 14, 2026</p>
+  <p class="muted">Last updated: November 22, 2026</p>
 
   <p>Panelmark is a browser extension that remembers which chapter of a manhwa, manga or webtoon you are on. This page explains what it stores and where.</p>
 
   <h2>What the extension stores</h2>
-  <p>When you stay on a page that looks like a chapter, the extension saves a record containing the series name, the website, the chapter number, the page address, a cover image address (if the page provides one) and the time you read it. It also keeps a history of the chapters you have opened in each series (chapter number, page address and time, up to 300 per series) so you can go back to any of them. It also saves your settings (blocked and allowed sites, alert and tracking switches).</p>
+  <p>When you stay on a page that looks like a chapter, the extension saves a record containing the series name, the website, the chapter number, the page address, a cover image address (if the page provides one) and the time you read it. It also keeps a history of the chapters you have opened in each series (chapter number, page address and time, up to 300 per series) so you can go back to any of them. You can also add a series by hand (a title, a chapter number and an optional link you type in), which is stored the same way. The extension also saves your settings (blocked and allowed sites, alert and tracking switches, and, if you use the Hidden folder, a salted hash of your PIN).</p>
   <p>This data is stored in your browser using the extension storage area. It stays on your device unless you turn on cloud sync.</p>
 
   <h2>What the extension does not do</h2>
@@ -31,14 +31,17 @@
     <li>It does not include advertising or analytics, and it does not sell or share your data.</li>
   </ul>
 
+  <h2>Hidden folder (optional)</h2>
+  <p>You can move series into a Hidden folder protected by a PIN you choose. Hidden series are kept out of your library list, search and new-chapter alerts until you enter the PIN. The PIN is stored only on your device, as a salted hash, and is never uploaded. It is a privacy screen to keep series out of casual view, not encryption: the series records themselves are stored like any other, and the fact that a series is hidden is included in cloud sync if you use it. If you forget your PIN, the &ldquo;Forgot PIN&rdquo; option removes the PIN and permanently deletes the series in the Hidden folder.</p>
+
   <h2>Cloud sync (optional)</h2>
-  <p>If you create an account and sign in, your library records (as described above) are uploaded to a database hosted by Supabase so that your progress can be shared across your devices. Your email address and a password hash are held by the authentication service for the account. Database access rules restrict each account to its own records. Signing out stops syncing; to delete your cloud data, contact the address below.</p>
+  <p>If you create an account and sign in, your library records, including reading history and whether a series is hidden (as described above), are uploaded to a database hosted by Supabase so that your progress can be shared across your devices. Your email address and a password hash are held by the authentication service for the account. Database access rules restrict each account to its own records. Signing out stops syncing; to delete your cloud data, contact the address below.</p>
 
   <h2>New-chapter alerts (optional)</h2>
   <p>If you turn on alerts, the extension asks for permission to access websites. It then fetches the series pages you have already read, periodically, to look for newer chapter links. The result is stored on your device only. Requests are sent without cookies. You can turn alerts off at any time and revoke the permission in your browser's extension settings.</p>
 
   <h2>Controls</h2>
-  <p>You can pause tracking, block specific sites, restrict tracking to an allowlist, remove any series, and export your data as a file. Uninstalling the extension deletes the data stored on your device.</p>
+  <p>You can pause tracking, block specific sites, restrict tracking to an allowlist, remove any series (removed series can be restored for 30 days, after which they are permanently cleared), and export your data as a file. Hidden series are only included in an export made while the Hidden folder is unlocked. Uninstalling the extension deletes the data stored on your device.</p>
 
   <h2>Children</h2>
   <p>The extension is not directed at children under 13 and does not knowingly collect their personal information.</p>
